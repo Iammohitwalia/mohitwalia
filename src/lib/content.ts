@@ -70,52 +70,28 @@ export interface ProjectItem {
 
 export const projects: ProjectItem[] = [
   {
-    title: "myPawPair",
-    category: "AI / Pet Care",
-    description:
-      "Pet care companion with Charlie AI, vet-reviewed guidance, and a profile that follows a dog or cat through every life stage.",
-    url: "https://mypawpair.com",
-    image: "/work/mypawpair.jpg",
-  },
-  {
-    title: "JobHookUp",
-    category: "Hiring",
-    description:
-      "Video profiles that connect candidates and employers. Private videos, and access only for approved employers.",
-    url: "https://jobhookup.ca/",
-    image: "/work/jobhookup.jpg",
-  },
-  {
-    title: "California DUI Checkpoints",
-    category: "Legal Tech",
-    description:
-      "Live checkpoint map and alerts across all 58 California counties, with attorney-reviewed guidance from Meehan Law Firm.",
-    url: "https://californiaduicheckpoints.com",
-    image: "/work/californiaduicheckpoints.jpg",
-  },
-  {
-    title: "adAlert.io",
-    category: "SaaS / PPC",
-    description:
-      "Google Ads monitoring that watches accounts around the clock and sends budget, performance, and policy alerts.",
-    url: "https://adalert.io",
-    image: "/work/adalert.jpg",
-  },
-  {
-    title: "The Meehan Law Firm",
-    category: "Legal",
-    description:
-      "California DUI and criminal defense site, with practice areas, statewide offices, and a way to request a consultation.",
-    url: "https://www.themeehanlawfirm.com/",
-    image: "/work/meehan.jpg",
-  },
-  {
-    title: "Perfect Union",
+    title: "Zentro",
     category: "E-Commerce",
     description:
-      "Dispensary site for Perfect Union, with online ordering, daily deals, and pages for locations across California.",
-    url: "https://www.perfect-union.com/",
-    image: "/work/perfect-union.jpg",
+      "Fashion store with collections, a cart, and product pages for athletic wear and streetwear.",
+    url: "https://zentro-livid.vercel.app/",
+    image: "/work/zentro-home.jpg",
+  },
+  {
+    title: "Everleaf",
+    category: "E-Commerce",
+    description:
+      "Dispensary storefront with an age gate, shop categories, daily deals, and featured products.",
+    url: "https://everleaf-store.vercel.app/",
+    image: "/work/everleaf.png",
+  },
+  {
+    title: "Movieflix",
+    category: "Streaming",
+    description:
+      "Movie app with a featured title, trending rows, and lists for now playing, top rated, and upcoming films.",
+    url: "https://v0-movieflixx.vercel.app/",
+    image: "/work/movieflix.jpg",
   },
 ];
 

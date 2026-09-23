@@ -158,6 +158,17 @@ export function ChartIcon({ className }: BrandIconProps) {
   );
 }
 
+export function UpworkIcon({ className }: BrandIconProps) {
+  return (
+    <svg viewBox="0 0 24 24" className={className ?? "h-[18px] w-[18px]"} aria-hidden="true">
+      <path
+        fill="#14A800"
+        d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.548-1.405-.002-2.543-1.143-2.545-2.548V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.912 3.217l-1.582 7.439h2.735l1.088-5.108c.96.593 2.094.951 3.324.951 2.913 0 5.281-2.389 5.281-5.303.001-2.913-2.366-5.302-5.279-5.302z"
+      />
+    </svg>
+  );
+}
+
 export function TypeScriptIcon({ className }: BrandIconProps) {
   return (
     <svg viewBox="0 0 32 32" className={className ?? "h-8 w-8"} aria-hidden="true">

@@ -4,7 +4,7 @@ import { Reveal } from "@/src/components/ui/Reveal";
 
 export function About() {
   return (
-    <section id="about" className="scroll-mt-24 bg-surface px-5 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
+    <section id="about" className="scroll-mt-24 bg-surface px-5 pt-6 pb-16 sm:px-6 sm:py-20 lg:px-8 lg:py-28">
       <div className="mx-auto grid w-full max-w-7xl items-center gap-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:gap-20">
         <Reveal>
           <AboutPortrait />

@@ -1,6 +1,7 @@
-import { ArrowUp, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { BackToTop } from "@/src/components/layout/BackToTop";
 import { Button } from "@/src/components/ui/Button";
 import { contact } from "@/src/lib/contact";
 import { navItems } from "@/src/lib/navigation";
@@ -9,8 +10,8 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-line bg-white pb-28 lg:pb-0">
-      <div className="mx-auto w-full max-w-7xl px-5 py-14 sm:px-6 lg:px-8 lg:py-16">
+    <footer className="border-t border-line bg-white pb-[4.75rem] lg:pb-0">
+      <div className="mx-auto w-full max-w-7xl px-5 pt-14 pb-2 sm:px-6 lg:px-8 lg:py-16">
         <div className="grid gap-8 rounded-[28px] border border-line bg-surface p-6 sm:p-8 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.7fr)_minmax(0,0.95fr)] lg:gap-12 lg:p-12">
           <div className="max-w-md">
             <Link href="/#top" className="inline-flex">
@@ -81,17 +82,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-6 flex flex-col gap-4 px-1 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
-          <p>© {year} Mohit Walia. All rights reserved.</p>
-          <Link
-            href="/#top"
-            className="inline-flex w-fit items-center gap-1.5 rounded-full border border-line bg-white px-3 py-1.5 font-semibold text-foreground transition-colors hover:border-[#D9FBE5] hover:text-accent"
-          >
-            <ArrowUp className="h-3.5 w-3.5" aria-hidden="true" />
-            Back to top
-          </Link>
-        </div>
+        <p className="mt-6 px-[4.75rem] text-center text-sm text-muted lg:px-1 lg:text-left">
+          © {year} Mohit Walia. All rights reserved.
+        </p>
       </div>
+      <BackToTop />
     </footer>
   );
 }

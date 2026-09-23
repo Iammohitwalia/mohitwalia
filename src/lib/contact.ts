@@ -5,3 +5,11 @@ export const contact = {
   email: "mohitwalii67@gmail.com",
   emailHref: "mailto:mohitwalii67@gmail.com",
 };
+
+export function openWhatsApp(message: string) {
+  window.open(
+    `${contact.talkHref}?text=${encodeURIComponent(message)}`,
+    "_blank",
+    "noopener,noreferrer",
+  );
+}

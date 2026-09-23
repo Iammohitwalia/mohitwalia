@@ -56,7 +56,7 @@ function ProjectShot({ project }: { project: ProjectItem }) {
           alt={`${project.title} website`}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 400px"
-          className="object-cover object-top"
+          className="object-contain object-center"
         />
       ) : (
         <div className="flex h-full flex-col justify-end bg-[radial-gradient(circle_at_30%_20%,rgba(34,197,94,0.28),transparent_55%),linear-gradient(160deg,#111827,#0B1220)] p-5">

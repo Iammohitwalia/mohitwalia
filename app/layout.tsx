@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Caveat, Geist, Inter } from "next/font/google";
+import { ChatWidget } from "@/src/components/chat/ChatWidget";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full bg-background font-sans font-medium text-foreground antialiased">
         {children}
+        <ChatWidget />
       </body>
     </html>
   );

@@ -23,7 +23,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative flex flex-col overflow-x-clip px-5 pt-3 pb-28 sm:px-6 lg:min-h-[calc(100svh-4.5rem)] lg:px-8 lg:pt-6 lg:pb-8"
+      className="relative flex flex-col overflow-x-clip px-5 pt-3 pb-4 sm:px-6 sm:pb-6 lg:min-h-[calc(100svh-4.5rem)] lg:px-8 lg:pt-6 lg:pb-8"
     >
       <div className="mx-auto flex w-full max-w-7xl flex-1 flex-col">
         <div className="grid items-center gap-y-2 lg:grid-cols-[minmax(0,0.96fr)_minmax(0,1.04fr)] lg:gap-x-4 xl:gap-x-6">
@@ -94,7 +94,9 @@ export function Hero() {
             </div>
           </div>
 
-          <HeroVisual />
+          <div className="hidden lg:block">
+            <HeroVisual />
+          </div>
         </div>
 
         <div className="mt-8 lg:hidden">
@@ -102,7 +104,7 @@ export function Hero() {
         </div>
 
         <motion.div
-          className="mt-12 flex items-end justify-between gap-8 lg:mt-auto lg:pt-10"
+          className="mt-12 hidden items-end justify-between gap-8 lg:mt-auto lg:flex lg:pt-10"
           initial={reduce ? false : fade.hidden}
           animate={{
             ...fade.show,
