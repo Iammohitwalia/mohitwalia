@@ -1,0 +1,88 @@
+import { ArrowUp, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/src/components/ui/Button";
+import { navItems } from "@/src/lib/navigation";
+
+export function Footer() {
+  const year = new Date().getFullYear();
+
+  return (
+    <footer className="border-t border-line bg-white pb-28 lg:pb-0">
+      <div className="mx-auto w-full max-w-7xl px-5 py-14 sm:px-6 lg:px-8 lg:py-16">
+        <div className="grid gap-8 rounded-[28px] border border-line bg-surface p-6 sm:p-8 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.7fr)_minmax(0,0.95fr)] lg:gap-12 lg:p-12">
+          <div className="max-w-md">
+            <Link href="/#top" className="inline-flex">
+              <Image
+                src="/websiteassets/Logo.png"
+                alt="Mohit Walia"
+                width={500}
+                height={84}
+                className="h-11 w-auto"
+              />
+            </Link>
+            <p className="mt-5 max-w-sm text-[15px] leading-7 text-muted">
+              I design and develop modern web applications, AI-powered solutions, and automation
+              systems that help businesses grow faster and work smarter.
+            </p>
+            <p className="mt-5 inline-flex items-center gap-2 rounded-full border border-line bg-white px-3 py-1.5 text-[12px] font-semibold text-foreground">
+              <span
+                className="h-1.5 w-1.5 rounded-full bg-accent shadow-[0_0_0_3px_rgba(34,197,94,0.18)]"
+                aria-hidden="true"
+              />
+              Available for new projects
+            </p>
+          </div>
+
+          <nav aria-label="Footer">
+            <p className="text-[11px] font-semibold tracking-[0.16em] text-muted uppercase">Explore</p>
+            <ul className="mt-4 grid grid-cols-2 gap-x-8 gap-y-3 sm:grid-cols-1">
+              {navItems.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="text-[15px] font-semibold text-foreground transition-colors hover:text-accent"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+
+          <div className="rounded-[22px] border border-line bg-white p-5 shadow-[0_18px_40px_-30px_rgba(15,23,42,0.45)] sm:p-6">
+            <p className="text-[11px] font-semibold tracking-[0.16em] text-muted uppercase">
+              Start a project
+            </p>
+            <p className="mt-3 text-[17px] leading-snug font-bold tracking-[-0.02em] text-foreground">
+              Tell me what you want to build.
+            </p>
+            <p className="mt-2 text-sm leading-6 text-muted">
+              I&apos;ll help you turn it into a product that ships — from the first screen to the
+              systems behind it.
+            </p>
+            <Button
+              href="/#contact"
+              shape="pill"
+              className="mt-5 h-11 px-4 text-sm"
+              trailingIcon={<ArrowUpRight className="h-4 w-4" aria-hidden="true" />}
+            >
+              Let&apos;s Talk
+            </Button>
+          </div>
+        </div>
+
+        <div className="mt-6 flex flex-col gap-4 px-1 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
+          <p>© {year} Mohit Walia. All rights reserved.</p>
+          <Link
+            href="/#top"
+            className="inline-flex w-fit items-center gap-1.5 rounded-full border border-line bg-white px-3 py-1.5 font-semibold text-foreground transition-colors hover:border-[#D9FBE5] hover:text-accent"
+          >
+            <ArrowUp className="h-3.5 w-3.5" aria-hidden="true" />
+            Back to top
+          </Link>
+        </div>
+      </div>
+    </footer>
+  );
+}
