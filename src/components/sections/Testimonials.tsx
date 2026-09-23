@@ -9,10 +9,7 @@ import { testimonials } from "@/src/lib/content";
 export function Testimonials() {
   const [start, setStart] = useState(0);
   const count = testimonials.length;
-  const ordered = [
-    ...testimonials.slice(start),
-    ...testimonials.slice(0, start),
-  ];
+  const ordered = [...testimonials.slice(start), ...testimonials.slice(0, start)];
 
   function step(direction: number) {
     setStart((current) => (current + direction + count) % count);
@@ -26,7 +23,7 @@ export function Testimonials() {
             <SectionHeading
               eyebrow="Client feedback"
               title="What Clients Say"
-              description="Long-term relationships and successful projects across the globe."
+              description="Reviews from completed Upwork contracts."
             />
           </Reveal>
           <div className="flex gap-2">
@@ -49,41 +46,41 @@ export function Testimonials() {
           </div>
         </div>
 
-        <div className="mt-10 grid gap-4 lg:grid-cols-3">
+        <div className="mt-10 grid items-stretch gap-4 lg:grid-cols-3">
           {ordered.map((item, index) => (
             <article
-              key={item.name}
-              className={`relative h-full flex-col overflow-hidden rounded-[22px] border border-line bg-white p-6 shadow-[0_18px_40px_-28px_rgba(15,23,42,0.35)] sm:p-7 ${
-                index > 0 ? "hidden lg:flex" : "flex"
+              key={item.id}
+              className={`h-full flex-col rounded-[22px] border border-line bg-white p-6 shadow-[0_18px_40px_-28px_rgba(15,23,42,0.35)] sm:p-7 ${
+                index === 0 ? "flex" : index < 3 ? "hidden lg:flex" : "hidden"
               }`}
             >
-              <span
-                className="pointer-events-none absolute top-3 left-5 font-hand text-6xl leading-none text-accent/25"
-                aria-hidden="true"
-              >
-                “
-              </span>
-              <p className="relative mt-8 flex-1 text-[15px] leading-7 text-[#475569]">{item.quote}</p>
-              <div className="mt-6 flex items-center justify-between gap-3 border-t border-line pt-5">
-                <div className="flex min-w-0 items-center gap-3">
-                  <span className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#0F172A] text-[11px] font-bold text-white">
-                    {item.initials}
-                    <span className="absolute -right-0.5 -bottom-0.5 h-3 w-3 rounded-full border-2 border-white bg-accent" />
-                  </span>
-                  <span className="min-w-0">
-                    <span className="block truncate text-sm font-semibold text-foreground">{item.name}</span>
-                    <span className="block truncate text-xs font-medium text-muted">{item.role}</span>
-                  </span>
-                </div>
-                <span className="flex shrink-0 gap-0.5" aria-label="5 star rating">
+              <div className="flex items-center gap-2">
+                <span className="flex gap-0.5" aria-hidden="true">
                   {Array.from({ length: 5 }).map((_, starIndex) => (
-                    <Star
-                      key={starIndex}
-                      className="h-3.5 w-3.5 fill-accent text-accent"
-                      aria-hidden="true"
-                    />
+                    <Star key={starIndex} className="h-3.5 w-3.5 fill-[#F59E0B] text-[#F59E0B]" />
                   ))}
                 </span>
+                <span className="text-sm font-bold text-foreground">{item.rating}</span>
+                <span className="text-xs font-medium text-muted">Upwork</span>
+              </div>
+              <p className="mt-4 text-[15px] leading-7 text-[#475569]">&ldquo;{item.quote}&rdquo;</p>
+              <div className="mt-auto pt-5">
+              {item.tags.length > 0 ? (
+                <ul className="mb-4 flex flex-wrap gap-2">
+                  {item.tags.map((tag) => (
+                    <li
+                      key={tag}
+                      className="rounded-full bg-surface px-2.5 py-1 text-[11px] font-medium text-muted"
+                    >
+                      {tag}
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+              <div className="border-t border-line pt-4">
+                <p className="text-sm font-semibold text-foreground">{item.title}</p>
+                <p className="mt-1 text-xs font-medium text-muted">{item.dates}</p>
+              </div>
               </div>
             </article>
           ))}

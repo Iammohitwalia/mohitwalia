@@ -64,59 +64,111 @@ export interface ProjectItem {
   title: string;
   category: string;
   description: string;
-  tone: "paw" | "legal" | "restaurant";
+  url: string;
+  image?: string;
 }
 
 export const projects: ProjectItem[] = [
   {
     title: "myPawPair",
-    category: "AI / SaaS",
+    category: "AI / Pet Care",
     description:
-      "AI-powered pet platform with subscriptions, provider directory and intelligent assistant.",
-    tone: "paw",
+      "Pet care companion with Charlie AI, vet-reviewed guidance, and a profile that follows a dog or cat through every life stage.",
+    url: "https://mypawpair.com",
+    image: "/work/mypawpair.jpg",
+  },
+  {
+    title: "JobHookUp",
+    category: "Hiring",
+    description:
+      "Video profiles that connect candidates and employers. Private videos, and access only for approved employers.",
+    url: "https://jobhookup.ca/",
+    image: "/work/jobhookup.jpg",
+  },
+  {
+    title: "California DUI Checkpoints",
+    category: "Legal Tech",
+    description:
+      "Live checkpoint map and alerts across all 58 California counties, with attorney-reviewed guidance from Meehan Law Firm.",
+    url: "https://californiaduicheckpoints.com",
+    image: "/work/californiaduicheckpoints.jpg",
+  },
+  {
+    title: "adAlert.io",
+    category: "SaaS / PPC",
+    description:
+      "Google Ads monitoring that watches accounts around the clock and sends budget, performance, and policy alerts.",
+    url: "https://adalert.io",
+    image: "/work/adalert.jpg",
   },
   {
     title: "The Meehan Law Firm",
-    category: "Legal Tech",
-    description: "Modern law firm website with a focus on performance and lead generation.",
-    tone: "legal",
+    category: "Legal",
+    description:
+      "California DUI and criminal defense site, with practice areas, statewide offices, and a way to request a consultation.",
+    url: "https://www.themeehanlawfirm.com/",
+    image: "/work/meehan.jpg",
   },
   {
-    title: "Maharaja Indian Restaurant",
+    title: "Perfect Union",
     category: "E-Commerce",
-    description: "Modern restaurant website with online ordering and beautiful UI.",
-    tone: "restaurant",
+    description:
+      "Dispensary site for Perfect Union, with online ordering, daily deals, and pages for locations across California.",
+    url: "https://www.perfect-union.com/",
+    image: "/work/perfect-union.jpg",
   },
 ];
 
 export interface TestimonialItem {
+  id: string;
   quote: string;
-  name: string;
-  role: string;
-  initials: string;
+  title: string;
+  rating: string;
+  dates: string;
+  tags: string[];
 }
 
 export const testimonials: TestimonialItem[] = [
   {
-    quote:
-      "Excellent developer. Very professional, great communication and delivered high-quality work. Will definitely work with Mohit again.",
-    name: "Asher R.",
-    role: "Agency Owner, USA",
-    initials: "AR",
+    id: "next-node",
+    quote: "Knowledgeable, on time, and pleasant to work with.",
+    title: "Next.js, Node.js Developer",
+    rating: "5.0",
+    dates: "Oct 18, 2024 – Nov 20, 2024",
+    tags: ["Reliable", "Collaborative"],
   },
   {
-    quote:
-      "Mohit and his team are fantastic. They understood our requirements quickly and delivered beyond expectations. Highly recommended!",
-    name: "Ann M.",
-    role: "Healthcare Business, USA",
-    initials: "AM",
+    id: "wordpress-ach",
+    quote: "A must hire for your project!",
+    title: "WordPress Website Development with ACH Payments",
+    rating: "5.0",
+    dates: "Jan 23, 2025 – Jan 28, 2025",
+    tags: [],
   },
   {
+    id: "figma",
+    quote: "Strongly recommend.",
+    title: "WordPress and Figma designer",
+    rating: "5.0",
+    dates: "May 24, 2024 – Jan 23, 2025",
+    tags: [],
+  },
+  {
+    id: "woocommerce",
     quote:
-      "Great technical knowledge and problem solving skills. Delivered the project on time and the quality was outstanding.",
-    name: "Byron S.",
-    role: "Business Owner, UK",
-    initials: "BS",
+      "I had the pleasure of working with Mohit on the development of my website, and the experience was great from start to finish. He was always responsive, attentive to every request, and quick to address any feedback or changes needed. Throughout the project, he maintained a positive and professional attitude, never hesitating to help, no matter how big or small the task. His willingness to go the extra mile made the entire process smooth and mostly stress-free. I truly appreciate his dedication and hard work, and I would highly recommend Mohit to anyone looking for a reliable, cost-effective and cooperative developer.",
+    title: "Convert Figma Design to WooCommerce",
+    rating: "4.9",
+    dates: "Jun 20, 2025 – Aug 12, 2025",
+    tags: ["Professional", "Clear Communicator", "Detail Oriented", "Reliable"],
+  },
+  {
+    id: "ongoing",
+    quote: "Endorsed by client",
+    title: "Next.js & Node.js Developer — Ongoing",
+    rating: "5.0",
+    dates: "Jan 21, 2025 – Dec 29, 2025",
+    tags: ["Committed to Quality"],
   },
 ];
 

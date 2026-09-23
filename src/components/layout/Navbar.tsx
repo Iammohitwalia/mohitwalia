@@ -1,27 +1,24 @@
 "use client";
 
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
-import { FileText, House, Menu, MessageCircle, X, ArrowUpRight } from "lucide-react";
+import { House, Menu, MessageCircle, X, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { mobileTabs, navItems } from "@/src/lib/navigation";
+import { contact } from "@/src/lib/contact";
 import { Button } from "@/src/components/ui/Button";
 
-function isItemActive(href: string, pathname: string, hash: string) {
-  if (href === "/") return pathname === "/" && hash === "";
-  return href === `/${hash}` || href === hash;
-}
+const sectionIds = ["top", "about", "services", "projects", "testimonials", "contact"];
 
 export function Navbar() {
   const reduce = useReducedMotion() === true;
-  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [hash, setHash] = useState("");
+  const [activeId, setActiveId] = useState("top");
   const panelRef = useRef<HTMLDivElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const lockRef = useRef<string | null>(null);
 
   useEffect(() => {
     const onScroll = () => setIsScrolled(window.scrollY > 8);
@@ -31,11 +28,49 @@ export function Navbar() {
   }, []);
 
   useEffect(() => {
-    const syncHash = () => setHash(window.location.hash);
-    syncHash();
-    window.addEventListener("hashchange", syncHash);
-    return () => window.removeEventListener("hashchange", syncHash);
+    function currentSection() {
+      const marker = Math.min(220, window.innerHeight * 0.32);
+      let current = sectionIds[0];
+      for (const id of sectionIds) {
+        const section = document.getElementById(id);
+        if (!section) continue;
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= marker && rect.bottom > marker) return id;
+        if (rect.top <= marker) current = id;
+      }
+      const atBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+      return atBottom ? "contact" : current;
+    }
+
+    function update() {
+      const current = currentSection();
+      if (lockRef.current) {
+        if (current === lockRef.current) lockRef.current = null;
+        else {
+          setActiveId(lockRef.current);
+          return;
+        }
+      }
+      setActiveId(current);
+    }
+
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("hashchange", update);
+    return () => {
+      window.removeEventListener("scroll", update);
+      window.removeEventListener("hashchange", update);
+    };
   }, []);
+
+  function activate(sectionId: string) {
+    lockRef.current = sectionId;
+    setActiveId(sectionId);
+    window.setTimeout(() => {
+      if (lockRef.current === sectionId) lockRef.current = null;
+    }, 1400);
+  }
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
@@ -93,7 +128,7 @@ export function Navbar() {
         }`}
       >
         <div className="mx-auto flex h-[4.5rem] w-full max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
-          <Link href="/" className="relative z-10 shrink-0">
+          <Link href="/#top" onClick={() => activate("top")} className="relative z-10 shrink-0">
             <Image
               src="/websiteassets/Logo.png"
               alt="Mohit Walia"
@@ -113,14 +148,15 @@ export function Navbar() {
           </Link>
 
           <nav aria-label="Primary" className="absolute left-1/2 hidden -translate-x-1/2 lg:block">
-            <ul className="flex items-center gap-6 xl:gap-8">
+            <ul className="flex items-center gap-4 xl:gap-7">
               {navItems.map((item) => {
-                const active = isItemActive(item.href, pathname, hash);
+                const active = item.sectionId === activeId;
                 return (
                   <li key={item.href}>
                     <Link
                       href={item.href}
                       aria-current={active ? "page" : undefined}
+                      onClick={() => activate(item.sectionId)}
                       className="flex flex-col items-center gap-1 text-[15px] font-medium text-foreground transition-colors hover:text-accent"
                     >
                       <span>{item.label}</span>
@@ -138,7 +174,7 @@ export function Navbar() {
           <div className="relative z-10 flex items-center">
             <div className="hidden lg:block">
               <Button
-                href="/#contact"
+                href={contact.talkHref}
                 shape="pill"
                 className="h-11 px-4 text-sm"
                 leadingIcon={<MessageCircle className="h-4 w-4" aria-hidden="true" />}
@@ -214,13 +250,16 @@ export function Navbar() {
             <nav aria-label="Mobile" className="flex-1 overflow-y-auto px-3">
               <ul>
                 {navItems.map((item) => {
-                  const active = isItemActive(item.href, pathname, hash);
+                  const active = item.sectionId === activeId;
                   return (
                     <li key={item.href}>
                       <Link
                         href={item.href}
                         aria-current={active ? "page" : undefined}
-                        onClick={closeMenu}
+                        onClick={() => {
+                          activate(item.sectionId);
+                          closeMenu();
+                        }}
                         className="flex items-center justify-between rounded-xl px-3 py-3.5 text-[17px] font-medium text-foreground transition-colors hover:bg-surface"
                       >
                         {item.label}
@@ -236,7 +275,7 @@ export function Navbar() {
             </nav>
             <div className="p-5">
               <Button
-                href="/#contact"
+                href={contact.talkHref}
                 shape="pill"
                 className="w-full"
                 leadingIcon={<MessageCircle className="h-4 w-4" aria-hidden="true" />}
@@ -256,14 +295,15 @@ export function Navbar() {
       >
         <ul className="mx-auto flex max-w-md items-stretch justify-around px-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] pt-2">
           {mobileTabs.map((item) => {
-            const active = isItemActive(item.href, pathname, hash);
+            const active = item.sectionId === activeId;
             const Icon =
-              item.label === "Home" ? House : item.label === "Projects" ? LayoutDots : FileText;
+              item.label === "Home" ? House : item.label === "Projects" ? LayoutDots : MessageCircle;
             return (
               <li key={item.href} className="flex-1">
                 <Link
                   href={item.href}
                   aria-current={active ? "page" : undefined}
+                  onClick={() => activate(item.sectionId)}
                   className={`flex flex-col items-center gap-0.5 py-1 text-[11px] font-medium ${
                     active ? "text-accent" : "text-muted"
                   }`}

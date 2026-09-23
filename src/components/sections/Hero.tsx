@@ -3,6 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, Calendar, Mouse } from "lucide-react";
 import { Button } from "@/src/components/ui/Button";
+import { contact } from "@/src/lib/contact";
 import { HeroStats } from "@/src/components/sections/HeroStats";
 import { HeroVisual } from "@/src/components/sections/HeroVisual";
 import { Industries } from "@/src/components/sections/Industries";
@@ -79,7 +80,7 @@ export function Hero() {
                 View My Work
               </Button>
               <Button
-                href="/#contact"
+                href={contact.talkHref}
                 variant="secondary"
                 className="w-full sm:w-auto"
                 trailingIcon={<Calendar className="h-4 w-4" strokeWidth={1.75} aria-hidden="true" />}

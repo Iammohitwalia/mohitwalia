@@ -3,7 +3,7 @@
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowUpRight, MessageCircle } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import { contact } from "@/src/lib/contact";
 import type { ReactNode } from "react";
 import {
   AutomationsIcon,
@@ -104,13 +104,15 @@ export function HeroVisual() {
         </svg>
       </div>
 
-      <Link
-        href="/#contact"
-        aria-label="Let's Talk"
+      <a
+        href={contact.talkHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Let's Talk on WhatsApp"
         className="absolute right-[6%] bottom-[20%] z-20 flex h-14 w-14 items-center justify-center rounded-2xl bg-accent text-white shadow-[0_12px_24px_-10px_rgba(34,197,94,0.9)] transition-transform duration-200 hover:-translate-y-0.5 lg:hidden"
       >
         <MessageCircle className="h-6 w-6" aria-hidden="true" />
-      </Link>
+      </a>
     </motion.div>
   );
 }

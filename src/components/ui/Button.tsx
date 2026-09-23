@@ -31,17 +31,36 @@ export function Button({
   className = "",
   onClick,
 }: ButtonProps) {
-  return (
-    <Link
-      href={href}
-      onClick={onClick}
-      className={`inline-flex h-12 items-center justify-center gap-2 whitespace-nowrap px-5 text-[15px] font-semibold transition-all duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 ${
-        shape === "pill" ? "rounded-full" : "rounded-[14px]"
-      } ${variantClass[variant]} ${className}`}
-    >
+  const classNameValue = `inline-flex h-12 items-center justify-center gap-2 whitespace-nowrap px-5 text-[15px] font-semibold transition-all duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 ${
+    shape === "pill" ? "rounded-full" : "rounded-[14px]"
+  } ${variantClass[variant]} ${className}`;
+  const content = (
+    <>
       {leadingIcon}
       <span>{children}</span>
       {trailingIcon}
+    </>
+  );
+  const external = /^(https?:|tel:|mailto:)/.test(href);
+
+  if (external) {
+    return (
+      <a
+        href={href}
+        onClick={onClick}
+        className={classNameValue}
+        {...(href.startsWith("http")
+          ? { target: "_blank", rel: "noopener noreferrer" }
+          : {})}
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <Link href={href} onClick={onClick} className={classNameValue}>
+      {content}
     </Link>
   );
 }

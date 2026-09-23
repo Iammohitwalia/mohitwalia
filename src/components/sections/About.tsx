@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { aboutFocus } from "@/src/lib/content";
 import { Reveal } from "@/src/components/ui/Reveal";
 
@@ -51,36 +52,15 @@ function AboutPortrait() {
         className="absolute top-8 -right-6 -bottom-6 -left-6 -z-10 rounded-[40px] bg-[radial-gradient(circle_at_50%_40%,rgba(34,197,94,0.22),transparent_68%)]"
         aria-hidden="true"
       />
-      <figure className="relative overflow-hidden rounded-[28px] border border-[#EEF1F4] bg-[#F8FAFC] shadow-[0_30px_70px_-36px_rgba(15,23,42,0.55)]">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(15,23,42,0.045)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.045)_1px,transparent_1px)] bg-[size:32px_32px]" />
-        <div className="absolute inset-x-0 top-0 h-40 bg-[radial-gradient(circle_at_50%_0%,rgba(34,197,94,0.28),transparent_70%)]" />
-        <div className="relative flex aspect-[4/5] flex-col items-center justify-center px-8 pb-20 sm:aspect-[5/6]">
-          <div className="absolute h-72 w-72 rounded-full border border-dashed border-[#D7DEE8] sm:h-80 sm:w-80" aria-hidden="true" />
-          <div className="absolute h-52 w-52 rounded-full border border-accent/25 sm:h-60 sm:w-60" aria-hidden="true" />
-          <div className="relative flex h-36 w-36 items-center justify-center rounded-full bg-[#0F172A] shadow-[0_24px_48px_-20px_rgba(15,23,42,0.75)] sm:h-44 sm:w-44">
-            <span className="text-5xl font-black tracking-[-0.06em] text-white">
-              M<span className="text-accent">.</span>
-            </span>
-          </div>
-        </div>
-        <div className="absolute top-4 left-4 rounded-2xl border border-[#EEF1F4] bg-white px-3 py-2.5 shadow-[0_16px_36px_-22px_rgba(15,23,42,0.45)]">
-          <span className="block text-sm font-bold text-foreground">5+ Years</span>
-          <span className="block text-[11px] font-medium text-muted">Experience</span>
-        </div>
-        <div className="absolute top-4 right-4 rounded-2xl border border-[#EEF1F4] bg-white px-3 py-2.5 shadow-[0_16px_36px_-22px_rgba(15,23,42,0.45)]">
-          <span className="block text-sm font-bold text-foreground">250+</span>
-          <span className="block text-[11px] font-medium text-muted">Projects</span>
-        </div>
-        <figcaption className="absolute right-4 bottom-4 left-4 flex items-center justify-between gap-3 rounded-2xl border border-white/80 bg-white/95 px-4 py-3 shadow-[0_16px_40px_-24px_rgba(15,23,42,0.45)] backdrop-blur-sm">
-          <span>
-            <span className="block text-sm font-semibold text-foreground">Mohit Walia</span>
-            <span className="block text-xs font-medium text-muted">Full Stack Developer</span>
-          </span>
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-[#ECFDF3] px-2.5 py-1 text-[11px] font-semibold text-[#15803D]">
-            <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
-            Available
-          </span>
-        </figcaption>
+      <figure className="overflow-hidden rounded-[28px] border border-line bg-white shadow-[0_30px_70px_-36px_rgba(15,23,42,0.55)]">
+        <Image
+          src="/me/me.png"
+          alt="Mohit Walia, full stack developer"
+          width={1086}
+          height={1448}
+          sizes="(max-width: 1024px) 90vw, 460px"
+          className="h-auto w-full"
+        />
       </figure>
     </div>
   );

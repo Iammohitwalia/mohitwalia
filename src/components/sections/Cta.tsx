@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Button } from "@/src/components/ui/Button";
 import { Reveal } from "@/src/components/ui/Reveal";
 import { ScriptNote } from "@/src/components/ui/SectionHeading";
+import { contact } from "@/src/lib/contact";
 
 export function Cta() {
   return (
@@ -44,7 +45,7 @@ export function Cta() {
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Button
-                href="/#contact"
+                href={contact.talkHref}
                 trailingIcon={<ArrowUpRight className="h-4 w-4" strokeWidth={2.25} aria-hidden="true" />}
                 className="w-full sm:w-auto"
               >
@@ -59,6 +60,17 @@ export function Cta() {
                 View My Work
               </Button>
             </div>
+            <p className="mt-5 flex flex-col items-center justify-center gap-1 text-sm font-medium text-white/75 sm:flex-row sm:gap-3">
+              <a href={contact.phoneHref} className="transition-colors hover:text-white">
+                {contact.phoneDisplay}
+              </a>
+              <span className="hidden text-white/30 sm:inline" aria-hidden="true">
+                ·
+              </span>
+              <a href={contact.emailHref} className="transition-colors hover:text-white">
+                {contact.email}
+              </a>
+            </p>
           </div>
           <ScriptNote
             lines={["Ideas", "to Impact"]}

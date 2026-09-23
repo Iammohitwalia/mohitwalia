@@ -2,6 +2,7 @@ import { ArrowUp, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/src/components/ui/Button";
+import { contact } from "@/src/lib/contact";
 import { navItems } from "@/src/lib/navigation";
 
 export function Footer() {
@@ -61,8 +62,16 @@ export function Footer() {
               I&apos;ll help you turn it into a product that ships — from the first screen to the
               systems behind it.
             </p>
+            <div className="mt-4 space-y-1 text-sm font-semibold">
+              <a href={contact.phoneHref} className="block text-foreground transition-colors hover:text-accent">
+                {contact.phoneDisplay}
+              </a>
+              <a href={contact.emailHref} className="block text-foreground transition-colors hover:text-accent">
+                {contact.email}
+              </a>
+            </div>
             <Button
-              href="/#contact"
+              href={contact.talkHref}
               shape="pill"
               className="mt-5 h-11 px-4 text-sm"
               trailingIcon={<ArrowUpRight className="h-4 w-4" aria-hidden="true" />}

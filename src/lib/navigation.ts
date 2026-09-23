@@ -1,19 +1,20 @@
 export interface NavItem {
   label: string;
   href: string;
+  sectionId: string;
 }
 
 export const navItems: NavItem[] = [
-  { label: "Home", href: "/" },
-  { label: "About", href: "/#about" },
-  { label: "Projects", href: "/#projects" },
-  { label: "Services", href: "/#services" },
-  { label: "Blog", href: "/#blog" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Home", href: "/#top", sectionId: "top" },
+  { label: "About", href: "/#about", sectionId: "about" },
+  { label: "Projects", href: "/#projects", sectionId: "projects" },
+  { label: "Services", href: "/#services", sectionId: "services" },
+  { label: "Testimonials", href: "/#testimonials", sectionId: "testimonials" },
+  { label: "Contact", href: "/#contact", sectionId: "contact" },
 ];
 
 export const mobileTabs: NavItem[] = [
-  { label: "Home", href: "/" },
-  { label: "Projects", href: "/#projects" },
-  { label: "Blog", href: "/#blog" },
+  { label: "Home", href: "/#top", sectionId: "top" },
+  { label: "Projects", href: "/#projects", sectionId: "projects" },
+  { label: "Contact", href: "/#contact", sectionId: "contact" },
 ];
