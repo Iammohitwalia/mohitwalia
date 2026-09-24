@@ -49,6 +49,14 @@ export function Footer() {
                   </SiteLink>
                 </li>
               ))}
+              <li>
+                <SiteLink
+                  href="/blog"
+                  className="text-[15px] font-semibold text-foreground transition-colors hover:text-accent"
+                >
+                  Blog
+                </SiteLink>
+              </li>
             </ul>
           </nav>
 
