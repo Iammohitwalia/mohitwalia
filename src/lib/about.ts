@@ -1,6 +1,6 @@
 export const aboutImages = {
   hero: "/me/me.png",
-  story: "/about/story.svg",
+  story: "/me/aboutme.png",
 };
 
 export const journey = [

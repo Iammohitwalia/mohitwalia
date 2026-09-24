@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { aboutImages } from "@/src/lib/about";
 import { Reveal } from "@/src/components/ui/Reveal";
 
@@ -12,18 +13,15 @@ export function AboutStory() {
               aria-hidden="true"
             />
             <figure className="overflow-hidden rounded-[28px] border border-line bg-white shadow-[0_30px_70px_-36px_rgba(15,23,42,0.45)]">
-              {/* Replace public/about/story.svg to swap this photo. The frame stays the same. */}
-              <img
+              <Image
                 src={aboutImages.story}
-                alt=""
-                width={800}
-                height={1000}
-                className="aspect-[4/5] h-auto w-full object-cover"
+                alt="Mohit Walia working on a laptop"
+                width={1199}
+                height={1312}
+                sizes="(max-width: 1024px) 90vw, 460px"
+                className="h-auto w-full"
               />
             </figure>
-            <p className="absolute bottom-5 left-5 max-w-[14rem] rounded-2xl border border-line bg-white px-4 py-3 text-sm leading-5 font-semibold text-foreground shadow-[0_16px_40px_-24px_rgba(15,23,42,0.45)]">
-              Passionate about building products
-            </p>
           </div>
         </Reveal>
 
