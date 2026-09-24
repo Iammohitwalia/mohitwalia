@@ -1,0 +1,177 @@
+{
+  "seo": {
+    "title": "Services | Mohit Walia",
+    "description": "Web development, Next.js, commerce, automation, AI features, APIs, and technical consulting from Mohit Walia.",
+    "keywords": [
+      "web development",
+      "Next.js",
+      "Shopify",
+      "WordPress",
+      "automation",
+      "AI development",
+      "API development"
+    ]
+  },
+  "hero": {
+    "eyebrow": "Services",
+    "heading": "Services that help businesses build, scale, and automate.",
+    "description": "Product engineering, commerce platforms, and the automation around them. Each engagement is scoped around a release you can use, not a catalogue of hours.",
+    "primaryLabel": "View services",
+    "primaryHref": "#services-grid",
+    "secondaryLabel": "Book a consultation",
+    "secondaryHref": "/#schedule",
+    "stats": [
+      {
+        "value": "250+",
+        "label": "Projects",
+        "icon": "layers"
+      },
+      {
+        "value": "5+",
+        "label": "Years",
+        "icon": "zap"
+      },
+      {
+        "value": "100%",
+        "label": "Job success",
+        "icon": "users"
+      },
+      {
+        "value": "Top Rated Plus",
+        "label": "on Upwork",
+        "icon": "upwork"
+      }
+    ],
+    "floating": [
+      "Next.js",
+      "AI",
+      "Automation",
+      "Node.js",
+      "Cloud",
+      "API"
+    ]
+  },
+  "why": {
+    "eyebrow": "Why work with me",
+    "heading": "A senior builder, not a rotating cast.",
+    "description": "You work with the person who writes the code and explains the tradeoffs. The process stays visible from the first call to launch.",
+    "items": [
+      {
+        "title": "Direct collaboration",
+        "detail": "No account layer between you and the work. Questions get an answer from the person building it."
+      },
+      {
+        "title": "A release, not a pile of tasks",
+        "detail": "We agree what the first version must do, then build that before the extras."
+      },
+      {
+        "title": "Stack you can keep",
+        "detail": "Next.js, Node, WordPress, Shopify, or Webflow. The choice follows the product, and you are not locked into a private framework."
+      },
+      {
+        "title": "Remote, on purpose",
+        "detail": "Calls are in India Standard Time, with overlap for US and UK hours when the work needs it."
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "Process",
+    "heading": "From the first call to a release you can run.",
+    "description": "Five steps. The same shape on every service, with the details changed to fit the product.",
+    "steps": [
+      {
+        "step": "01",
+        "title": "Discovery",
+        "detail": "We pin down the outcome, the constraints, and what the first release has to do."
+      },
+      {
+        "step": "02",
+        "title": "Planning",
+        "detail": "I turn that into a scope, a sequence, and the technical approach."
+      },
+      {
+        "step": "03",
+        "title": "Development",
+        "detail": "I build in small slices you can review, on the stack this service uses."
+      },
+      {
+        "step": "04",
+        "title": "Testing",
+        "detail": "We check the flows that matter before anything is treated as finished."
+      },
+      {
+        "step": "05",
+        "title": "Launch",
+        "detail": "I ship it, watch the first days, and leave you with a clear way to change it."
+      }
+    ]
+  },
+  "faqs": {
+    "eyebrow": "Questions",
+    "heading": "Before we start.",
+    "description": "If your question is not here, send it on WhatsApp.",
+    "items": [
+      {
+        "question": "How do we begin?",
+        "answer": "Send a note with what you want to ship. If it is a fit, we book a short call and agree the first release."
+      },
+      {
+        "question": "Do you work with teams outside India?",
+        "answer": "Yes. Most of the work is remote. Calls are scheduled in India Standard Time."
+      },
+      {
+        "question": "Can you join a product that already exists?",
+        "answer": "Yes. I read the current system first and change the part you hired me for."
+      },
+      {
+        "question": "What does the first call cover?",
+        "answer": "The product, the timeline, and what version one must do. It is about 30 minutes."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Ready to build your next product?",
+    "description": "Tell me what you want to ship. I will reply on WhatsApp, and we can book a call if the project is a fit.",
+    "primaryLabel": "Book a consultation",
+    "secondaryLabel": "Chat on WhatsApp"
+  },
+  "detailCta": {
+    "primaryLabel": "Start your project",
+    "secondaryLabel": "Chat on WhatsApp"
+  },
+  "enquiry": {
+    "budgets": [
+      "Under $2k",
+      "$2k–$8k",
+      "$8k–$20k",
+      "$20k+",
+      "Not sure yet"
+    ],
+    "timelines": [
+      "As soon as possible",
+      "This month",
+      "1–3 months",
+      "Exploring"
+    ],
+    "availability": "Available for new projects",
+    "responseTime": "I reply on WhatsApp, usually the same day.",
+    "resumeHref": "",
+    "submitLabel": "Submit",
+    "whatsappLabel": "Chat on WhatsApp",
+    "bookLabel": "Book a discovery call",
+    "resumeLabel": "Download resume",
+    "relatedLabel": "Related services"
+  },
+  "order": [
+    "web-development",
+    "nextjs-development",
+    "wordpress-development",
+    "shopify",
+    "webflow",
+    "saas-development",
+    "automation",
+    "ai-development",
+    "api-development",
+    "technical-consulting"
+  ]
+}

@@ -1,7 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { BackToTop } from "@/src/components/layout/BackToTop";
+import { SiteLink } from "@/src/components/layout/SiteLink";
 import { Button } from "@/src/components/ui/Button";
 import { contact } from "@/src/lib/contact";
 import { navItems } from "@/src/lib/navigation";
@@ -14,7 +14,7 @@ export function Footer() {
       <div className="mx-auto w-full max-w-7xl px-5 pt-14 pb-2 sm:px-6 lg:px-8 lg:py-16">
         <div className="grid gap-8 rounded-[28px] border border-line bg-surface p-6 sm:p-8 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.7fr)_minmax(0,0.95fr)] lg:gap-12 lg:p-12">
           <div className="max-w-md">
-            <Link href="/#top" className="inline-flex">
+            <SiteLink href="/" className="inline-flex">
               <Image
                 src="/websiteassets/Logo.png"
                 alt="Mohit Walia"
@@ -22,7 +22,7 @@ export function Footer() {
                 height={84}
                 className="h-11 w-auto"
               />
-            </Link>
+            </SiteLink>
             <p className="mt-5 max-w-sm text-[15px] leading-7 text-muted">
               I design and develop modern web applications, AI-powered solutions, and automation
               systems that help businesses grow faster and work smarter.
@@ -41,12 +41,12 @@ export function Footer() {
             <ul className="mt-4 grid grid-cols-2 gap-x-8 gap-y-3 sm:grid-cols-1">
               {navItems.map((item) => (
                 <li key={item.href}>
-                  <Link
+                  <SiteLink
                     href={item.href}
                     className="text-[15px] font-semibold text-foreground transition-colors hover:text-accent"
                   >
                     {item.label}
-                  </Link>
+                  </SiteLink>
                 </li>
               ))}
             </ul>
@@ -82,9 +82,17 @@ export function Footer() {
           </div>
         </div>
 
-        <p className="mt-6 px-[4.75rem] text-center text-sm text-muted lg:px-1 lg:text-left">
-          © {year} Mohit Walia. All rights reserved.
-        </p>
+        <div className="mt-6 flex flex-col items-center gap-3 px-[4.75rem] text-center text-sm text-muted lg:flex-row lg:items-center lg:justify-between lg:px-1 lg:text-left">
+          <p>© {year} Mohit Walia. All rights reserved.</p>
+          <nav aria-label="Legal" className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            <SiteLink href="/privacy" className="font-semibold text-foreground transition-colors hover:text-accent">
+              Privacy Policy
+            </SiteLink>
+            <SiteLink href="/terms" className="font-semibold text-foreground transition-colors hover:text-accent">
+              Terms &amp; Conditions
+            </SiteLink>
+          </nav>
+        </div>
       </div>
       <BackToTop />
     </footer>

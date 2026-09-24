@@ -1,0 +1,137 @@
+{
+  "slug": "technical-consulting",
+  "title": "Technical Consulting",
+  "category": "Consulting",
+  "excerpt": "A practical read on architecture, stack, and the next build, written so a founder or a team can act on it.",
+  "icon": "chat",
+  "tags": [
+    "Architecture",
+    "Next.js",
+    "AWS"
+  ],
+  "image": "",
+  "seo": {
+    "title": "Technical Consulting | Mohit Walia",
+    "description": "A practical read on architecture, stack, and the next build, written so a founder or a team can act on it.",
+    "keywords": [
+      "Technical Consulting",
+      "Consulting",
+      "Architecture",
+      "Next.js",
+      "AWS"
+    ]
+  },
+  "hero": {
+    "heading": "Technical consulting before the expensive rewrite.",
+    "subtitle": "I review the product, the stack, and the plan, then leave you with a sequence you can build. Not a slide deck that avoids the hard part."
+  },
+  "meta": {
+    "timeline": "1–3 weeks",
+    "technology": "Architecture",
+    "updated": "24 Sep 2026",
+    "readingTime": "5 min"
+  },
+  "overview": "Consulting is for a decision: what to build next, whether to rewrite, which stack to keep, or how to split a system that has tangled. The output is a written recommendation and a sequence.",
+  "problem": "The team is busy shipping and the architecture questions keep getting postponed. A rewrite gets proposed because the current code feels uncomfortable, not because anyone mapped the cost.",
+  "solution": "I read the code and the product, talk to the people who operate it, and write what to keep, what to change, and in what order. If a rebuild is the wrong spend, I will say that.",
+  "features": [
+    {
+      "title": "A written recommendation",
+      "detail": "The decision, the reasons, and the risks in plain language."
+    },
+    {
+      "title": "A sequence",
+      "detail": "What to do first so the team is not asked to boil the ocean."
+    },
+    {
+      "title": "Stack honesty",
+      "detail": "Keep the tools that fit. Replace the ones that are costing you."
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Discovery",
+      "detail": "We pin down the outcome, the constraints, and what the first release has to do."
+    },
+    {
+      "step": "02",
+      "title": "Planning",
+      "detail": "I turn that into a scope, a sequence, and the technical approach."
+    },
+    {
+      "step": "03",
+      "title": "Development",
+      "detail": "I build in small slices you can review, on the stack this service uses."
+    },
+    {
+      "step": "04",
+      "title": "Testing",
+      "detail": "We check the flows that matter before anything is treated as finished."
+    },
+    {
+      "step": "05",
+      "title": "Launch",
+      "detail": "I ship it, watch the first days, and leave you with a clear way to change it."
+    }
+  ],
+  "stack": [
+    "Next.js",
+    "Node.js",
+    "PostgreSQL",
+    "AWS",
+    "Vercel"
+  ],
+  "benefits": [
+    {
+      "title": "A decision, not a tour",
+      "detail": "You leave with a direction."
+    },
+    {
+      "title": "The team can execute it",
+      "detail": "The sequence is sized for the people you have."
+    },
+    {
+      "title": "Optional build help",
+      "detail": "I can stay and implement the first slice, or stop at the writing."
+    }
+  ],
+  "deliverables": [
+    "Written recommendation",
+    "Suggested sequence",
+    "Risks and what you are choosing not to do",
+    "A call to walk through it"
+  ],
+  "timeline": [
+    {
+      "phase": "Read",
+      "duration": "First days",
+      "detail": "Code, deploys, and a conversation with the people who feel the pain."
+    },
+    {
+      "phase": "Write",
+      "duration": "Next",
+      "detail": "The recommendation and the sequence."
+    },
+    {
+      "phase": "Walk through",
+      "duration": "End",
+      "detail": "A call so the writing is not misread."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Is this an audit with a score?",
+      "answer": "No. It is a recommendation tied to your product. I will not hand you a generic checklist with a grade."
+    },
+    {
+      "question": "Do you have to build it afterwards?",
+      "answer": "No. The writing is useful on its own. Building the first slice is a separate agreement."
+    }
+  ],
+  "related": [
+    "web-development",
+    "saas-development",
+    "ai-development"
+  ]
+}

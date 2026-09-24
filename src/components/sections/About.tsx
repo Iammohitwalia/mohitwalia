@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { aboutFocus } from "@/src/lib/content";
+import { PortraitTilt } from "@/src/components/ui/PortraitTilt";
 import { Reveal } from "@/src/components/ui/Reveal";
 
 export function About() {
@@ -52,16 +53,18 @@ function AboutPortrait() {
         className="absolute top-8 -right-6 -bottom-6 -left-6 -z-10 rounded-[40px] bg-[radial-gradient(circle_at_50%_40%,rgba(34,197,94,0.22),transparent_68%)]"
         aria-hidden="true"
       />
-      <figure className="overflow-hidden rounded-[28px] border border-line bg-white shadow-[0_30px_70px_-36px_rgba(15,23,42,0.55)]">
-        <Image
-          src="/me/me.png"
-          alt="Mohit Walia, full stack developer"
-          width={1086}
-          height={1448}
-          sizes="(max-width: 1024px) 90vw, 460px"
-          className="h-auto w-full"
-        />
-      </figure>
+      <PortraitTilt>
+        <figure className="overflow-hidden rounded-[28px] border border-line bg-white shadow-[0_30px_70px_-36px_rgba(15,23,42,0.55)]">
+          <Image
+            src="/me/me.png"
+            alt="Mohit Walia, full stack developer"
+            width={1086}
+            height={1448}
+            sizes="(max-width: 1024px) 90vw, 460px"
+            className="h-auto w-full"
+          />
+        </figure>
+      </PortraitTilt>
     </div>
   );
 }

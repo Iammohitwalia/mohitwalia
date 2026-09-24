@@ -52,7 +52,7 @@ export function Cta() {
                 Let&apos;s Talk
               </Button>
               <Button
-                href="/#projects"
+                href="/projects"
                 variant="inverted"
                 trailingIcon={<ArrowUpRight className="h-4 w-4" strokeWidth={2.25} aria-hidden="true" />}
                 className="w-full sm:w-auto"

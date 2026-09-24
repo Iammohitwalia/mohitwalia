@@ -1,0 +1,138 @@
+{
+  "slug": "saas-development",
+  "title": "SaaS Development",
+  "category": "Product engineering",
+  "excerpt": "Multi-tenant product foundations: accounts, billing, and the first workflows your customers pay for.",
+  "icon": "layers",
+  "tags": [
+    "Next.js",
+    "PostgreSQL",
+    "Stripe"
+  ],
+  "image": "",
+  "seo": {
+    "title": "SaaS Development | Mohit Walia",
+    "description": "Multi-tenant product foundations: accounts, billing, and the first workflows your customers pay for.",
+    "keywords": [
+      "SaaS Development",
+      "Product engineering",
+      "Next.js",
+      "PostgreSQL",
+      "Stripe"
+    ]
+  },
+  "hero": {
+    "heading": "SaaS development from the first paying workflow.",
+    "subtitle": "Accounts, permissions, billing, and the screens that deliver the product. Built so the second customer is not a special case."
+  },
+  "meta": {
+    "timeline": "6–14 weeks",
+    "technology": "Next.js",
+    "updated": "24 Sep 2026",
+    "readingTime": "7 min"
+  },
+  "overview": "A SaaS build is the product loop: sign up, do the valuable thing, pay, and come back. I build that loop before the surrounding dashboards.",
+  "problem": "Early SaaS products collect screens. Billing is a mock, permissions are an if-statement, and the first real customer forces a rewrite.",
+  "solution": "I start with tenancy, auth, and the core workflow. Stripe billing is real. The admin view is only what you need to support customers.",
+  "features": [
+    {
+      "title": "Accounts and roles",
+      "detail": "People belong to a workspace. Access is explicit."
+    },
+    {
+      "title": "Billing with Stripe",
+      "detail": "Plans, checkout, and the states a subscription can be in."
+    },
+    {
+      "title": "The core workflow",
+      "detail": "The job the customer hired the product to do, shipped as a usable path."
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Discovery",
+      "detail": "We pin down the outcome, the constraints, and what the first release has to do."
+    },
+    {
+      "step": "02",
+      "title": "Planning",
+      "detail": "I turn that into a scope, a sequence, and the technical approach."
+    },
+    {
+      "step": "03",
+      "title": "Development",
+      "detail": "I build in small slices you can review, on the stack this service uses."
+    },
+    {
+      "step": "04",
+      "title": "Testing",
+      "detail": "We check the flows that matter before anything is treated as finished."
+    },
+    {
+      "step": "05",
+      "title": "Launch",
+      "detail": "I ship it, watch the first days, and leave you with a clear way to change it."
+    }
+  ],
+  "stack": [
+    "Next.js",
+    "TypeScript",
+    "PostgreSQL",
+    "Prisma",
+    "Stripe",
+    "Vercel"
+  ],
+  "benefits": [
+    {
+      "title": "The second customer works",
+      "detail": "Data is separated by account from the start."
+    },
+    {
+      "title": "Money is not a prototype",
+      "detail": "Checkout and webhooks are part of the build."
+    },
+    {
+      "title": "Support is possible",
+      "detail": "You can see an account and help without a database tour."
+    }
+  ],
+  "deliverables": [
+    "Authenticated product",
+    "Billing integration",
+    "Core workflow",
+    "Deployment and a short runbook"
+  ],
+  "timeline": [
+    {
+      "phase": "Loop",
+      "duration": "Weeks 1–2",
+      "detail": "Auth, tenancy, and the smallest useful workflow."
+    },
+    {
+      "phase": "Product",
+      "duration": "Middle",
+      "detail": "The screens, data, and billing around that workflow."
+    },
+    {
+      "phase": "Operate",
+      "duration": "End",
+      "detail": "Launch, monitoring, and how to support an account."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do you build the whole company, or the product?",
+      "answer": "The product. Marketing sites can be part of the same codebase when you want them, but the priority is the thing customers log into."
+    },
+    {
+      "question": "Which database do you use?",
+      "answer": "PostgreSQL is the default. If you already run something else, I will use it when it fits."
+    }
+  ],
+  "related": [
+    "nextjs-development",
+    "api-development",
+    "ai-development"
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "slug": "nextjs-development",
+  "title": "Next.js Development",
+  "category": "Product engineering",
+  "excerpt": "Next.js applications with a clear App Router structure, fast pages, and a backend that is not bolted on later.",
+  "icon": "code",
+  "tags": [
+    "Next.js",
+    "React",
+    "TypeScript"
+  ],
+  "image": "",
+  "seo": {
+    "title": "Next.js Development | Mohit Walia",
+    "description": "Next.js applications with a clear App Router structure, fast pages, and a backend that is not bolted on later.",
+    "keywords": [
+      "Next.js Development",
+      "Product engineering",
+      "Next.js",
+      "React",
+      "TypeScript"
+    ]
+  },
+  "hero": {
+    "heading": "Next.js development for products that need to stay fast.",
+    "subtitle": "I use the App Router, server rendering, and TypeScript so the product is quick to load and straightforward to extend."
+  },
+  "meta": {
+    "timeline": "3–8 weeks",
+    "technology": "Next.js",
+    "updated": "24 Sep 2026",
+    "readingTime": "6 min"
+  },
+  "overview": "Next.js is the default I reach for when a product needs marketing pages, an application, and a deployment story in one place. This service is the build itself: routes, data, UI, and release.",
+  "problem": "Teams adopt Next.js and then fight it. Client components everywhere, data fetched twice, and a folder structure nobody wants to open six months later.",
+  "solution": "I keep server components as the default, put client code only where the browser is required, and structure routes so a new page has an obvious home.",
+  "features": [
+    {
+      "title": "App Router structure",
+      "detail": "Layouts, loading states, and route groups that match how the product is organized."
+    },
+    {
+      "title": "Typed data boundaries",
+      "detail": "The shape of the data is explicit where it enters the UI."
+    },
+    {
+      "title": "Deployed on Vercel",
+      "detail": "Preview deployments so you can review a change before it is the live site."
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Discovery",
+      "detail": "We pin down the outcome, the constraints, and what the first release has to do."
+    },
+    {
+      "step": "02",
+      "title": "Planning",
+      "detail": "I turn that into a scope, a sequence, and the technical approach."
+    },
+    {
+      "step": "03",
+      "title": "Development",
+      "detail": "I build in small slices you can review, on the stack this service uses."
+    },
+    {
+      "step": "04",
+      "title": "Testing",
+      "detail": "We check the flows that matter before anything is treated as finished."
+    },
+    {
+      "step": "05",
+      "title": "Launch",
+      "detail": "I ship it, watch the first days, and leave you with a clear way to change it."
+    }
+  ],
+  "stack": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind",
+    "Vercel"
+  ],
+  "benefits": [
+    {
+      "title": "Less client JavaScript",
+      "detail": "Pages stay light because the server does the work it should."
+    },
+    {
+      "title": "Reviews are concrete",
+      "detail": "You click through a preview, not a slide."
+    },
+    {
+      "title": "A path for the next feature",
+      "detail": "New routes follow the same pattern as the first ones."
+    }
+  ],
+  "deliverables": [
+    "Next.js application",
+    "Shared UI and layout",
+    "Preview and production deploys",
+    "Notes on the route structure"
+  ],
+  "timeline": [
+    {
+      "phase": "Foundation",
+      "duration": "Week 1",
+      "detail": "App shell, type setup, and the first real route."
+    },
+    {
+      "phase": "Product",
+      "duration": "Middle weeks",
+      "detail": "The screens and data the release depends on."
+    },
+    {
+      "phase": "Ship",
+      "duration": "Last days",
+      "detail": "Performance pass, metadata, and launch."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can you join a Next.js codebase that already exists?",
+      "answer": "Yes. I start by reading how routes and data work today, then change the part you hired me for without a rewrite you did not ask for."
+    },
+    {
+      "question": "Do you use the App Router?",
+      "answer": "Yes, for new work. If the project is still on the older pages router, I will say so before moving anything."
+    }
+  ],
+  "related": [
+    "web-development",
+    "saas-development",
+    "api-development"
+  ]
+}

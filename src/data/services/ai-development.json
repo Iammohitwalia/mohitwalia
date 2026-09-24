@@ -1,0 +1,137 @@
+{
+  "slug": "ai-development",
+  "title": "AI Development",
+  "category": "AI & automation",
+  "excerpt": "Product features that use a model for a specific job: drafts, search, classification, or support, with a way to review the output.",
+  "icon": "brain",
+  "tags": [
+    "OpenAI",
+    "Claude",
+    "TypeScript"
+  ],
+  "image": "",
+  "seo": {
+    "title": "AI Development | Mohit Walia",
+    "description": "Product features that use a model for a specific job: drafts, search, classification, or support, with a way to review the output.",
+    "keywords": [
+      "AI Development",
+      "AI & automation",
+      "OpenAI",
+      "Claude",
+      "TypeScript"
+    ]
+  },
+  "hero": {
+    "heading": "AI features with a job, a boundary, and a review.",
+    "subtitle": "I add model-backed features to a product you already have, or build the small product around one. The model is a worker, not the whole company."
+  },
+  "meta": {
+    "timeline": "2–8 weeks",
+    "technology": "OpenAI",
+    "updated": "24 Sep 2026",
+    "readingTime": "6 min"
+  },
+  "overview": "Useful AI work is a narrow task with examples, a prompt or a tool call, and a place for a human to correct it. I build that into your product instead of a disconnected chat window.",
+  "problem": "A chatbot is added because it is expected. It answers with confidence, cannot see your data, and nobody knows when it is wrong.",
+  "solution": "I define the task, connect only the data that task needs, and show the output where a person can accept or edit it. Logs tell you what the model did.",
+  "features": [
+    {
+      "title": "A single job",
+      "detail": "Draft, classify, extract, or answer from your own content. Not an open-ended persona."
+    },
+    {
+      "title": "Your content, not the public internet",
+      "detail": "The model sees the documents or records you choose."
+    },
+    {
+      "title": "A review step",
+      "detail": "Someone can correct the output before it reaches a customer, when that matters."
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Discovery",
+      "detail": "We pin down the outcome, the constraints, and what the first release has to do."
+    },
+    {
+      "step": "02",
+      "title": "Planning",
+      "detail": "I turn that into a scope, a sequence, and the technical approach."
+    },
+    {
+      "step": "03",
+      "title": "Development",
+      "detail": "I build in small slices you can review, on the stack this service uses."
+    },
+    {
+      "step": "04",
+      "title": "Testing",
+      "detail": "We check the flows that matter before anything is treated as finished."
+    },
+    {
+      "step": "05",
+      "title": "Launch",
+      "detail": "I ship it, watch the first days, and leave you with a clear way to change it."
+    }
+  ],
+  "stack": [
+    "OpenAI",
+    "Claude",
+    "TypeScript",
+    "Next.js",
+    "PostgreSQL"
+  ],
+  "benefits": [
+    {
+      "title": "You can tell if it works",
+      "detail": "The task has examples, so quality is visible."
+    },
+    {
+      "title": "Costs stay bounded",
+      "detail": "Calls are tied to a feature, not an unlimited chat."
+    },
+    {
+      "title": "It lives in the product",
+      "detail": "Users do not leave the workflow to paste text into another tool."
+    }
+  ],
+  "deliverables": [
+    "The feature in your product",
+    "Prompt and tool setup",
+    "A log of runs",
+    "Notes on how to change the task"
+  ],
+  "timeline": [
+    {
+      "phase": "Task",
+      "duration": "Week 1",
+      "detail": "Examples of good and bad output, and the data the model may see."
+    },
+    {
+      "phase": "Build",
+      "duration": "Middle",
+      "detail": "The feature, the review UI, and the logs."
+    },
+    {
+      "phase": "Tune",
+      "duration": "End",
+      "detail": "A pass on real examples before it is the default."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Which model do you use?",
+      "answer": "OpenAI or Claude, chosen for the task and the budget. The product code does not depend on a single vendor more than it has to."
+    },
+    {
+      "question": "Will it train on our data?",
+      "answer": "I use the provider APIs in a way that sends only what the feature needs. We confirm the provider's data terms before launch."
+    }
+  ],
+  "related": [
+    "automation",
+    "saas-development",
+    "api-development"
+  ]
+}

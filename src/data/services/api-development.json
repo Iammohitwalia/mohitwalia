@@ -1,0 +1,136 @@
+{
+  "slug": "api-development",
+  "title": "API Development",
+  "category": "Product engineering",
+  "excerpt": "APIs and integrations that move data between your product and the tools around it, with errors you can see.",
+  "icon": "database",
+  "tags": [
+    "Node.js",
+    "REST",
+    "PostgreSQL"
+  ],
+  "image": "",
+  "seo": {
+    "title": "API Development | Mohit Walia",
+    "description": "APIs and integrations that move data between your product and the tools around it, with errors you can see.",
+    "keywords": [
+      "API Development",
+      "Product engineering",
+      "Node.js",
+      "REST",
+      "PostgreSQL"
+    ]
+  },
+  "hero": {
+    "heading": "APIs and integrations with a contract you can read.",
+    "subtitle": "REST endpoints, webhooks, and third-party connections. Stripe, CRMs, and internal tools included when they are part of the job."
+  },
+  "meta": {
+    "timeline": "2–6 weeks",
+    "technology": "Node.js",
+    "updated": "24 Sep 2026",
+    "readingTime": "5 min"
+  },
+  "overview": "I build the boundary between systems: the endpoints your app calls, the webhooks other tools call, and the mapping between their data and yours.",
+  "problem": "Integrations start as a script. Then a field changes, a webhook is missed, and the only record of what happened is a log nobody can search.",
+  "solution": "Each connection has a written shape, retries where they help, and a stored result so you can see what was sent and what came back.",
+  "features": [
+    {
+      "title": "A readable contract",
+      "detail": "The inputs and outputs are documented next to the code."
+    },
+    {
+      "title": "Webhooks you can replay",
+      "detail": "A failed delivery can be inspected and sent again."
+    },
+    {
+      "title": "Third-party care",
+      "detail": "Stripe, CRMs, and similar tools are connected with their failure states in mind."
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Discovery",
+      "detail": "We pin down the outcome, the constraints, and what the first release has to do."
+    },
+    {
+      "step": "02",
+      "title": "Planning",
+      "detail": "I turn that into a scope, a sequence, and the technical approach."
+    },
+    {
+      "step": "03",
+      "title": "Development",
+      "detail": "I build in small slices you can review, on the stack this service uses."
+    },
+    {
+      "step": "04",
+      "title": "Testing",
+      "detail": "We check the flows that matter before anything is treated as finished."
+    },
+    {
+      "step": "05",
+      "title": "Launch",
+      "detail": "I ship it, watch the first days, and leave you with a clear way to change it."
+    }
+  ],
+  "stack": [
+    "Node.js",
+    "TypeScript",
+    "PostgreSQL",
+    "Stripe"
+  ],
+  "benefits": [
+    {
+      "title": "Other developers can join",
+      "detail": "The boundary is documented."
+    },
+    {
+      "title": "Failures are data",
+      "detail": "You can see the payload, not just a red light."
+    },
+    {
+      "title": "The product stays in charge",
+      "detail": "External tools do not become the only copy of your data."
+    }
+  ],
+  "deliverables": [
+    "API or integration",
+    "Request and response notes",
+    "Webhook handling",
+    "A way to inspect failures"
+  ],
+  "timeline": [
+    {
+      "phase": "Contract",
+      "duration": "Days 1–4",
+      "detail": "The data, the auth, and the failure cases."
+    },
+    {
+      "phase": "Build",
+      "duration": "Following weeks",
+      "detail": "Endpoints, webhooks, and storage."
+    },
+    {
+      "phase": "Prove",
+      "duration": "End",
+      "detail": "A run against the real service in a safe mode, then production."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do you design public APIs for other companies to call?",
+      "answer": "Yes. Auth, versioning, and a short reference are part of that work."
+    },
+    {
+      "question": "Can you connect a tool we already use?",
+      "answer": "If it has an API or webhooks, usually yes. I will say so after looking at their docs, before the build starts."
+    }
+  ],
+  "related": [
+    "saas-development",
+    "automation",
+    "web-development"
+  ]
+}

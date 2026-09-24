@@ -1,0 +1,134 @@
+{
+  "slug": "webflow",
+  "title": "Webflow",
+  "category": "Commerce & CMS",
+  "excerpt": "Webflow sites for marketing teams that want visual control and a CMS that matches the design.",
+  "icon": "cursor",
+  "tags": [
+    "Webflow",
+    "CMS",
+    "Figma"
+  ],
+  "image": "",
+  "seo": {
+    "title": "Webflow | Mohit Walia",
+    "description": "Webflow sites for marketing teams that want visual control and a CMS that matches the design.",
+    "keywords": [
+      "Webflow",
+      "Commerce & CMS",
+      "Webflow",
+      "CMS",
+      "Figma"
+    ]
+  },
+  "hero": {
+    "heading": "Webflow sites that stay editable after launch.",
+    "subtitle": "Marketing pages, CMS collections, and interactions, structured so a designer or marketer can publish without breaking the layout."
+  },
+  "meta": {
+    "timeline": "2–5 weeks",
+    "technology": "Webflow",
+    "updated": "24 Sep 2026",
+    "readingTime": "5 min"
+  },
+  "overview": "Webflow fits marketing sites and content-led brands. I set up the layout system, the CMS, and the interactions so the site looks considered and the team can add pages later.",
+  "problem": "A Webflow project becomes a stack of one-off sections. The next landing page takes as long as the first because nothing was built to be reused.",
+  "solution": "I build a small system of classes, components, and CMS templates first, then the pages. New campaigns reuse that system.",
+  "features": [
+    {
+      "title": "Reusable components",
+      "detail": "Nav, sections, and cards are components, not copies."
+    },
+    {
+      "title": "CMS that matches the design",
+      "detail": "Collections have the fields the templates actually use."
+    },
+    {
+      "title": "Interactions with restraint",
+      "detail": "Motion supports the page. It does not delay it."
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Discovery",
+      "detail": "We pin down the outcome, the constraints, and what the first release has to do."
+    },
+    {
+      "step": "02",
+      "title": "Planning",
+      "detail": "I turn that into a scope, a sequence, and the technical approach."
+    },
+    {
+      "step": "03",
+      "title": "Development",
+      "detail": "I build in small slices you can review, on the stack this service uses."
+    },
+    {
+      "step": "04",
+      "title": "Testing",
+      "detail": "We check the flows that matter before anything is treated as finished."
+    },
+    {
+      "step": "05",
+      "title": "Launch",
+      "detail": "I ship it, watch the first days, and leave you with a clear way to change it."
+    }
+  ],
+  "stack": [
+    "Webflow",
+    "Figma"
+  ],
+  "benefits": [
+    {
+      "title": "Marketing can publish",
+      "detail": "New posts and landing pages use templates that already fit."
+    },
+    {
+      "title": "The file stays tidy",
+      "detail": "Classes have names. The project is not a mystery."
+    },
+    {
+      "title": "A path to custom code later",
+      "detail": "If a feature outgrows Webflow, we can move that part without throwing the site away."
+    }
+  ],
+  "deliverables": [
+    "Webflow project",
+    "CMS collections",
+    "Component library",
+    "Editor notes"
+  ],
+  "timeline": [
+    {
+      "phase": "System",
+      "duration": "Week 1",
+      "detail": "Type, color, and the components pages will share."
+    },
+    {
+      "phase": "Pages",
+      "duration": "Next weeks",
+      "detail": "The marketing pages and CMS templates."
+    },
+    {
+      "phase": "Publish",
+      "duration": "End",
+      "detail": "Domain, forms, and a walkthrough."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Can you take over an existing Webflow project?",
+      "answer": "Yes. I clean the class list only where it blocks the work you asked for."
+    },
+    {
+      "question": "Do forms go to email?",
+      "answer": "Webflow forms can notify your inbox. If you need them in another tool, that connection is part of the scope."
+    }
+  ],
+  "related": [
+    "wordpress-development",
+    "web-development",
+    "shopify"
+  ]
+}

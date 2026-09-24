@@ -10,6 +10,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import Link from "next/link";
 import { Button } from "@/src/components/ui/Button";
 import { Reveal } from "@/src/components/ui/Reveal";
 import { ScriptNote, SectionHeading } from "@/src/components/ui/SectionHeading";
@@ -48,7 +49,7 @@ export function Services() {
             action={
               <div className="flex flex-col items-start gap-8 lg:items-end">
                 <Button
-                  href="/#services"
+                  href="/services"
                   variant="secondary"
                   trailingIcon={<ArrowUpRight className="h-4 w-4" strokeWidth={2.25} aria-hidden="true" />}
                 >
@@ -65,7 +66,10 @@ export function Services() {
             const Icon = serviceIcons[service.icon];
             return (
               <Reveal key={service.title} delay={Math.min(index * 0.05, 0.3)} className="h-full">
-                <article className="group relative flex h-full min-h-[250px] flex-col rounded-[22px] border border-line bg-white p-5 shadow-[0_18px_40px_-28px_rgba(15,23,42,0.35)] transition duration-200 hover:-translate-y-0.5 hover:border-[#D9FBE5] hover:shadow-[0_24px_50px_-24px_rgba(15,23,42,0.28)] sm:p-6">
+                <Link
+                  href={service.href}
+                  className="group relative flex h-full min-h-[250px] flex-col rounded-[22px] border border-line bg-white p-5 shadow-[0_18px_40px_-28px_rgba(15,23,42,0.35)] transition duration-200 hover:-translate-y-0.5 hover:border-[#D9FBE5] hover:shadow-[0_24px_50px_-24px_rgba(15,23,42,0.28)] sm:p-6"
+                >
                   <div className="flex items-start justify-between">
                     <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ECFDF3] text-accent">
                       <Icon className="h-5 w-5" strokeWidth={1.75} aria-hidden="true" />
@@ -90,7 +94,7 @@ export function Services() {
                       </li>
                     ))}
                   </ul>
-                </article>
+                </Link>
               </Reveal>
             );
           })}

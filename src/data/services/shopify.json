@@ -1,0 +1,135 @@
+{
+  "slug": "shopify",
+  "title": "Shopify",
+  "category": "Commerce & CMS",
+  "excerpt": "Shopify themes and storefront changes for catalogues that need to convert without a custom platform.",
+  "icon": "cursor",
+  "tags": [
+    "Shopify",
+    "Liquid",
+    "Stripe"
+  ],
+  "image": "",
+  "seo": {
+    "title": "Shopify | Mohit Walia",
+    "description": "Shopify themes and storefront changes for catalogues that need to convert without a custom platform.",
+    "keywords": [
+      "Shopify",
+      "Commerce & CMS",
+      "Shopify",
+      "Liquid",
+      "Stripe"
+    ]
+  },
+  "hero": {
+    "heading": "Shopify storefronts built around the catalogue.",
+    "subtitle": "Theme work, product templates, and checkout-adjacent flows. Shopify stays the system of record. The storefront stops fighting it."
+  },
+  "meta": {
+    "timeline": "2–6 weeks",
+    "technology": "Shopify",
+    "updated": "24 Sep 2026",
+    "readingTime": "5 min"
+  },
+  "overview": "I use Shopify when the business wants hosted commerce, inventory, and payments without operating its own stack. The work is the theme, the product story, and the pieces around checkout.",
+  "problem": "A stock theme plus a dozen apps makes the product page slow and the brand look accidental. Merchandising becomes a fight with sections that were not designed for your catalogue.",
+  "solution": "I shape the product, collection, and cart templates around how you actually sell, and I keep apps to the ones that earn their place.",
+  "features": [
+    {
+      "title": "Product templates that match the range",
+      "detail": "Variants, media, and details sit where a buyer expects them."
+    },
+    {
+      "title": "A calmer theme",
+      "detail": "Sections your team can rearrange without breaking the page."
+    },
+    {
+      "title": "Checkout stays Shopify",
+      "detail": "Payments and orders remain on the platform you already trust."
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Discovery",
+      "detail": "We pin down the outcome, the constraints, and what the first release has to do."
+    },
+    {
+      "step": "02",
+      "title": "Planning",
+      "detail": "I turn that into a scope, a sequence, and the technical approach."
+    },
+    {
+      "step": "03",
+      "title": "Development",
+      "detail": "I build in small slices you can review, on the stack this service uses."
+    },
+    {
+      "step": "04",
+      "title": "Testing",
+      "detail": "We check the flows that matter before anything is treated as finished."
+    },
+    {
+      "step": "05",
+      "title": "Launch",
+      "detail": "I ship it, watch the first days, and leave you with a clear way to change it."
+    }
+  ],
+  "stack": [
+    "Shopify",
+    "Liquid",
+    "Stripe"
+  ],
+  "benefits": [
+    {
+      "title": "You keep Shopify admin",
+      "detail": "Products, orders, and discounts stay where your team already works."
+    },
+    {
+      "title": "Faster product pages",
+      "detail": "Less app noise on the pages people buy from."
+    },
+    {
+      "title": "A theme you can edit",
+      "detail": "The next campaign does not require a rebuild."
+    }
+  ],
+  "deliverables": [
+    "Theme updates or a custom theme",
+    "Product and collection templates",
+    "App review",
+    "Launch checklist"
+  ],
+  "timeline": [
+    {
+      "phase": "Catalogue",
+      "duration": "Week 1",
+      "detail": "How products, collections, and the cart should behave."
+    },
+    {
+      "phase": "Theme",
+      "duration": "Middle",
+      "detail": "Templates and the sections the team will reuse."
+    },
+    {
+      "phase": "Launch",
+      "duration": "End",
+      "detail": "Checks on checkout, taxes, and the live theme."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do you migrate a store onto Shopify?",
+      "answer": "Yes, when the catalogue and orders have a clear source. We plan the cutover so the shop is not offline longer than it needs to be."
+    },
+    {
+      "question": "Can you build a headless storefront?",
+      "answer": "Yes, with a Next.js front and Shopify as the commerce backend, when the theme is no longer enough."
+    }
+  ],
+  "related": [
+    "wordpress-development",
+    "webflow",
+    "web-development"
+  ]
+}

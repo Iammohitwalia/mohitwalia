@@ -1,0 +1,135 @@
+{
+  "slug": "automation",
+  "title": "Automation",
+  "category": "AI & automation",
+  "excerpt": "Workflows that move data between the tools you already pay for, with a person in the loop where judgment matters.",
+  "icon": "brain",
+  "tags": [
+    "Node.js",
+    "APIs",
+    "Webhooks"
+  ],
+  "image": "",
+  "seo": {
+    "title": "Automation | Mohit Walia",
+    "description": "Workflows that move data between the tools you already pay for, with a person in the loop where judgment matters.",
+    "keywords": [
+      "Automation",
+      "AI & automation",
+      "Node.js",
+      "APIs",
+      "Webhooks"
+    ]
+  },
+  "hero": {
+    "heading": "Automation for the work your team repeats every week.",
+    "subtitle": "I connect the systems you already use so leads, orders, files, and notifications move without someone copying them by hand."
+  },
+  "meta": {
+    "timeline": "1–4 weeks",
+    "technology": "Node.js",
+    "updated": "24 Sep 2026",
+    "readingTime": "5 min"
+  },
+  "overview": "Automation is a workflow with a trigger, a few steps, and a failure you can see. I build those for operations that are currently a spreadsheet and a memory.",
+  "problem": "The same information is typed into three tools. When someone is out, the process stops, and nobody can tell which copy is right.",
+  "solution": "I pick the system of record, then automate the copies and the notifications. Failures are visible. A person still handles the steps that need judgment.",
+  "features": [
+    {
+      "title": "A named trigger",
+      "detail": "A form, a payment, a new row, or a webhook starts the workflow."
+    },
+    {
+      "title": "Visible failures",
+      "detail": "When a step breaks, you can see it and retry it."
+    },
+    {
+      "title": "A human where it matters",
+      "detail": "Approval stays with a person when the cost of a mistake is high."
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Discovery",
+      "detail": "We pin down the outcome, the constraints, and what the first release has to do."
+    },
+    {
+      "step": "02",
+      "title": "Planning",
+      "detail": "I turn that into a scope, a sequence, and the technical approach."
+    },
+    {
+      "step": "03",
+      "title": "Development",
+      "detail": "I build in small slices you can review, on the stack this service uses."
+    },
+    {
+      "step": "04",
+      "title": "Testing",
+      "detail": "We check the flows that matter before anything is treated as finished."
+    },
+    {
+      "step": "05",
+      "title": "Launch",
+      "detail": "I ship it, watch the first days, and leave you with a clear way to change it."
+    }
+  ],
+  "stack": [
+    "Node.js",
+    "Webhooks",
+    "PostgreSQL"
+  ],
+  "benefits": [
+    {
+      "title": "Less retyping",
+      "detail": "The record is created once."
+    },
+    {
+      "title": "The process survives vacation",
+      "detail": "It is not stored in one person's inbox."
+    },
+    {
+      "title": "You can change a step",
+      "detail": "The workflow is code or a clear diagram, not a mystery."
+    }
+  ],
+  "deliverables": [
+    "Working workflow",
+    "Error visibility",
+    "A short description of each step",
+    "A way to retry a failed run"
+  ],
+  "timeline": [
+    {
+      "phase": "Map",
+      "duration": "Days 1–3",
+      "detail": "The current steps, the system of record, and the exceptions."
+    },
+    {
+      "phase": "Automate",
+      "duration": "Following days",
+      "detail": "The happy path and the failures."
+    },
+    {
+      "phase": "Hand over",
+      "duration": "End",
+      "detail": "You run it once with me watching."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do you use Zapier or custom code?",
+      "answer": "Whichever fits the volume and the failure modes. Simple chains can stay in a tool you already have. Anything that needs history or care becomes code."
+    },
+    {
+      "question": "Can this include an AI step?",
+      "answer": "Yes, when a model is the right worker for a draft or a classification. A person can still approve the result."
+    }
+  ],
+  "related": [
+    "ai-development",
+    "api-development",
+    "technical-consulting"
+  ]
+}

@@ -1,7 +1,8 @@
 "use client";
 
-import { ChevronLeft, ChevronRight, Star } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
+import { TestimonialCard } from "@/src/components/testimonials/TestimonialCard";
 import { Reveal } from "@/src/components/ui/Reveal";
 import { SectionHeading } from "@/src/components/ui/SectionHeading";
 import { testimonials } from "@/src/lib/content";
@@ -48,41 +49,11 @@ export function Testimonials() {
 
         <div className="mt-10 grid items-stretch gap-4 lg:grid-cols-3">
           {ordered.map((item, index) => (
-            <article
+            <TestimonialCard
               key={item.id}
-              className={`h-full flex-col rounded-[22px] border border-line bg-white p-6 shadow-[0_18px_40px_-28px_rgba(15,23,42,0.35)] sm:p-7 ${
-                index === 0 ? "flex" : index < 3 ? "hidden lg:flex" : "hidden"
-              }`}
-            >
-              <div className="flex items-center gap-2">
-                <span className="flex gap-0.5" aria-hidden="true">
-                  {Array.from({ length: 5 }).map((_, starIndex) => (
-                    <Star key={starIndex} className="h-3.5 w-3.5 fill-[#F59E0B] text-[#F59E0B]" />
-                  ))}
-                </span>
-                <span className="text-sm font-bold text-foreground">{item.rating}</span>
-                <span className="text-xs font-medium text-muted">Upwork</span>
-              </div>
-              <p className="mt-4 text-[15px] leading-7 text-[#475569]">&ldquo;{item.quote}&rdquo;</p>
-              <div className="mt-auto pt-5">
-              {item.tags.length > 0 ? (
-                <ul className="mb-4 flex flex-wrap gap-2">
-                  {item.tags.map((tag) => (
-                    <li
-                      key={tag}
-                      className="rounded-full bg-surface px-2.5 py-1 text-[11px] font-medium text-muted"
-                    >
-                      {tag}
-                    </li>
-                  ))}
-                </ul>
-              ) : null}
-              <div className="border-t border-line pt-4">
-                <p className="text-sm font-semibold text-foreground">{item.title}</p>
-                <p className="mt-1 text-xs font-medium text-muted">{item.dates}</p>
-              </div>
-              </div>
-            </article>
+              item={item}
+              className={index === 0 ? "flex h-full" : index < 3 ? "hidden h-full lg:flex" : "hidden"}
+            />
           ))}
         </div>
       </div>

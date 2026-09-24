@@ -4,15 +4,27 @@ import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { House, Menu, MessageCircle, X, ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { mobileTabs, navItems } from "@/src/lib/navigation";
 import { contact } from "@/src/lib/contact";
 import { Button } from "@/src/components/ui/Button";
+import { scrollTopIfSamePage } from "@/src/components/layout/ScrollToTop";
 
 const sectionIds = ["top", "about", "services", "projects", "testimonials", "contact"];
 
+function sectionForPath(pathname: string) {
+  if (pathname === "/about") return "about";
+  if (pathname === "/services" || pathname.startsWith("/services/")) return "services";
+  if (pathname === "/projects") return "projects";
+  if (pathname === "/testimonials") return "testimonials";
+  if (pathname === "/contact") return "contact";
+  return "";
+}
+
 export function Navbar() {
   const reduce = useReducedMotion() === true;
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [activeId, setActiveId] = useState("top");
@@ -28,6 +40,11 @@ export function Navbar() {
   }, []);
 
   useEffect(() => {
+    if (pathname !== "/") {
+      setActiveId(sectionForPath(pathname));
+      return;
+    }
+
     function currentSection() {
       const marker = Math.min(220, window.innerHeight * 0.32);
       let current = sectionIds[0];
@@ -62,7 +79,7 @@ export function Navbar() {
       window.removeEventListener("scroll", update);
       window.removeEventListener("hashchange", update);
     };
-  }, []);
+  }, [pathname]);
 
   function activate(sectionId: string) {
     lockRef.current = sectionId;
@@ -128,7 +145,14 @@ export function Navbar() {
         }`}
       >
         <div className="mx-auto flex h-[4.5rem] w-full max-w-7xl items-center justify-between px-5 sm:px-6 lg:px-8">
-          <Link href="/#top" onClick={() => activate("top")} className="relative z-10 shrink-0">
+          <Link
+            href="/"
+            onClick={(event) => {
+              activate("top");
+              scrollTopIfSamePage(event, "/", pathname);
+            }}
+            className="relative z-10 shrink-0"
+          >
             <Image
               src="/websiteassets/Logo.png"
               alt="Mohit Walia"
@@ -156,7 +180,10 @@ export function Navbar() {
                     <Link
                       href={item.href}
                       aria-current={active ? "page" : undefined}
-                      onClick={() => activate(item.sectionId)}
+                      onClick={(event) => {
+                        activate(item.sectionId);
+                        scrollTopIfSamePage(event, item.href, pathname);
+                      }}
                       className="flex flex-col items-center gap-1 text-[15px] font-medium text-foreground transition-colors hover:text-accent"
                     >
                       <span>{item.label}</span>
@@ -256,8 +283,9 @@ export function Navbar() {
                       <Link
                         href={item.href}
                         aria-current={active ? "page" : undefined}
-                        onClick={() => {
+                        onClick={(event) => {
                           activate(item.sectionId);
+                          scrollTopIfSamePage(event, item.href, pathname);
                           closeMenu();
                         }}
                         className="flex items-center justify-between rounded-xl px-3 py-3.5 text-[17px] font-medium text-foreground transition-colors hover:bg-surface"
@@ -303,7 +331,10 @@ export function Navbar() {
                 <Link
                   href={item.href}
                   aria-current={active ? "page" : undefined}
-                  onClick={() => activate(item.sectionId)}
+                  onClick={(event) => {
+                    activate(item.sectionId);
+                    scrollTopIfSamePage(event, item.href, pathname);
+                  }}
                   className={`flex flex-col items-center gap-0.5 py-1 text-[11px] font-medium ${
                     active ? "text-accent" : "text-muted"
                   }`}

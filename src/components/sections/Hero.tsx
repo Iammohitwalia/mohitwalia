@@ -73,7 +73,7 @@ export function Hero() {
               }}
             >
               <Button
-                href="/#projects"
+                href="/projects"
                 className="w-full sm:w-auto"
                 trailingIcon={<ArrowUpRight className="h-4 w-4" strokeWidth={2.25} aria-hidden="true" />}
               >

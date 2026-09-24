@@ -2,6 +2,7 @@ export interface ServiceItem {
   title: string;
   description: string;
   tags: string[];
+  href: string;
   icon: "code" | "brain" | "chat" | "cursor" | "database" | "cloud" | "layers" | "shield";
 }
 
@@ -11,6 +12,7 @@ export const services: ServiceItem[] = [
     description:
       "Modern, scalable and high-performance web applications using Next.js, React and more.",
     tags: ["Next.js", "React", "TypeScript"],
+    href: "/services/web-development",
     icon: "code",
   },
   {
@@ -18,12 +20,14 @@ export const services: ServiceItem[] = [
     description:
       "Integrate AI, LLMs and automation workflows to streamline your business processes.",
     tags: ["OpenAI", "Claude", "Automation"],
+    href: "/services/ai-development",
     icon: "brain",
   },
   {
     title: "Technical Consulting",
     description: "Get expert guidance on architecture, tech stack and scaling your product.",
     tags: ["Strategy", "Architecture", "Scaling"],
+    href: "/services/technical-consulting",
     icon: "chat",
   },
   {
@@ -31,24 +35,28 @@ export const services: ServiceItem[] = [
     description:
       "Webflow, WordPress, Shopify and custom CMS solutions for fast and flexible websites.",
     tags: ["Webflow", "WordPress", "Shopify"],
+    href: "/services/wordpress-development",
     icon: "cursor",
   },
   {
     title: "API Integration",
     description: "Third-party API integrations, payment systems, CRMs and custom solutions.",
     tags: ["Stripe", "Twilio", "Airtable"],
+    href: "/services/api-development",
     icon: "database",
   },
   {
     title: "Cloud & DevOps",
     description: "Deployment, server setup, CI/CD and cloud infrastructure on Vercel, AWS and more.",
     tags: ["Vercel", "AWS", "DevOps"],
+    href: "/services/saas-development",
     icon: "cloud",
   },
   {
     title: "Database & Backend",
     description: "Node.js, Express.js, MongoDB, PostgreSQL and scalable backend systems.",
     tags: ["Node.js", "PostgreSQL", "MongoDB"],
+    href: "/services/nextjs-development",
     icon: "layers",
   },
   {
@@ -56,6 +64,7 @@ export const services: ServiceItem[] = [
     description:
       "Ongoing support, feature updates and performance optimization to keep your product running smoothly.",
     tags: ["Monitoring", "Updates", "Support"],
+    href: "/contact",
     icon: "shield",
   },
 ];

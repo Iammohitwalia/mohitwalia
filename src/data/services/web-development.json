@@ -1,0 +1,138 @@
+{
+  "slug": "web-development",
+  "title": "Web Development",
+  "category": "Product engineering",
+  "excerpt": "Custom websites and web apps built around how the business actually works, not a theme with your logo dropped in.",
+  "icon": "code",
+  "tags": [
+    "Next.js",
+    "React",
+    "TypeScript"
+  ],
+  "image": "",
+  "seo": {
+    "title": "Web Development | Mohit Walia",
+    "description": "Custom websites and web apps built around how the business actually works, not a theme with your logo dropped in.",
+    "keywords": [
+      "Web Development",
+      "Product engineering",
+      "Next.js",
+      "React",
+      "TypeScript"
+    ]
+  },
+  "hero": {
+    "heading": "Web development for products people keep using.",
+    "subtitle": "I design and build the interface, the backend, and the release path as one system. The result is a site or app you can change without starting over."
+  },
+  "meta": {
+    "timeline": "4–10 weeks",
+    "technology": "Next.js",
+    "updated": "24 Sep 2026",
+    "readingTime": "6 min"
+  },
+  "overview": "This is for a new site, a rebuild, or a product that has outgrown a page builder. I work from the flows your customers and team use, then implement them in a stack that stays understandable.",
+  "problem": "A lot of web projects start from a template. The first version looks finished, then every real requirement — accounts, content, payments, search — turns into a plugin pile that is slow and hard to change.",
+  "solution": "I scope a first release that covers the real journeys, build it in Next.js and TypeScript, and keep the content model and the interface in the same codebase so later features have a place to land.",
+  "features": [
+    {
+      "title": "A clear information model",
+      "detail": "Pages, collections, and accounts match the business, so editors are not fighting the CMS."
+    },
+    {
+      "title": "Fast public pages",
+      "detail": "The important routes are server-rendered and cached where it helps, so the first view is quick."
+    },
+    {
+      "title": "Room to grow",
+      "detail": "Auth, payments, and integrations are added as parts of the product, not as afterthoughts."
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "Discovery",
+      "detail": "We pin down the outcome, the constraints, and what the first release has to do."
+    },
+    {
+      "step": "02",
+      "title": "Planning",
+      "detail": "I turn that into a scope, a sequence, and the technical approach."
+    },
+    {
+      "step": "03",
+      "title": "Development",
+      "detail": "I build in small slices you can review, on the stack this service uses."
+    },
+    {
+      "step": "04",
+      "title": "Testing",
+      "detail": "We check the flows that matter before anything is treated as finished."
+    },
+    {
+      "step": "05",
+      "title": "Launch",
+      "detail": "I ship it, watch the first days, and leave you with a clear way to change it."
+    }
+  ],
+  "stack": [
+    "Next.js",
+    "React",
+    "TypeScript",
+    "Tailwind",
+    "Node.js",
+    "Vercel"
+  ],
+  "benefits": [
+    {
+      "title": "One codebase",
+      "detail": "Design, content, and logic live together, so a change does not mean three tools."
+    },
+    {
+      "title": "Honest scope",
+      "detail": "The first release is the part people will actually use, not a catalogue of screens."
+    },
+    {
+      "title": "You can ship again",
+      "detail": "The handoff includes how to edit, deploy, and add the next feature."
+    }
+  ],
+  "deliverables": [
+    "Working web application",
+    "Content structure and admin path",
+    "Deployment on Vercel or your host",
+    "Short notes on how to update it"
+  ],
+  "timeline": [
+    {
+      "phase": "Shape",
+      "duration": "Week 1",
+      "detail": "Flows, content, and the technical outline."
+    },
+    {
+      "phase": "Build",
+      "duration": "Weeks 2–7",
+      "detail": "Interface and the systems behind it, reviewed in slices."
+    },
+    {
+      "phase": "Release",
+      "duration": "Final week",
+      "detail": "Checks, launch, and the first round of fixes."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Do you rebuild existing sites?",
+      "answer": "Yes. We keep what is working, replace what is slowing you down, and move content across with a plan instead of a surprise."
+    },
+    {
+      "question": "Can my team edit the content?",
+      "answer": "Yes. The editing path is part of the build, whether that is a CMS, a simple admin, or files your team already understands."
+    }
+  ],
+  "related": [
+    "nextjs-development",
+    "saas-development",
+    "api-development"
+  ]
+}
